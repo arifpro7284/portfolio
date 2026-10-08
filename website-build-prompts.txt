@@ -1,6 +1,6 @@
 WEBSITE BUILD PROMPTS FOR ARIFUL ISLAM'S PORTFOLIO
 
-Use one prompt at a time in your AI coding tool. Ask it to create the files in a separate folder or repository for that project. Do not replace your portfolio files with a demo project.
+Use one prompt at a time in your AI coding tool. The published demos live in separate folders under `projects/`. Do not replace your portfolio files with a demo project.
 
 GENERAL RULES FOR EVERY PROJECT
 
@@ -14,7 +14,7 @@ GENERAL RULES FOR EVERY PROJECT
 
 ------------------------------------------------------------
 1. BUSINESS WEBSITE
-Suggested folder: business-website
+Suggested folder: projects/business-website
 
 PROMPT
 
@@ -26,7 +26,7 @@ Create index.html, style.css, and script.js. Keep JavaScript lightweight. Includ
 
 ------------------------------------------------------------
 2. RESTAURANT WEBSITE
-Suggested folder: restaurant-website
+Suggested folder: projects/restaurant-website
 
 PROMPT
 
@@ -38,7 +38,7 @@ Create index.html, style.css, and script.js, plus a README. Keep the design quic
 
 ------------------------------------------------------------
 3. E-COMMERCE WEBSITE
-Suggested folder: ecommerce-website
+Suggested folder: projects/ecommerce-website
 
 PROMPT
 
@@ -50,7 +50,7 @@ Create the files needed for the chosen approach and explain whether it is a stat
 
 ------------------------------------------------------------
 4. NEWS / BLOG WEBSITE
-Suggested folder: news-blog-website
+Suggested folder: projects/news-blog-website
 
 PROMPT
 
@@ -62,7 +62,7 @@ Create the files needed for the chosen approach and include a README with local 
 
 ------------------------------------------------------------
 5. PERSONAL PORTFOLIO WEBSITE
-Suggested folder: personal-portfolio-demo
+Already built: the main personal portfolio is the repository root and is live at https://arifpro7284.github.io/portfolio/. No duplicate is needed.
 
 PROMPT
 

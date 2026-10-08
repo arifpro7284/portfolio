@@ -1,6 +1,6 @@
 # Ariful Islam | Portfolio
 
-Personal portfolio website for Ariful Islam, a Frontend & WordPress Web Developer.
+Personal portfolio for Ariful Islam, Frontend & WordPress Web Developer.
 
 - **Live website:** [arifpro7284.github.io/portfolio](https://arifpro7284.github.io/portfolio/)
 - **GitHub profile:** [github.com/arifpro7284](https://github.com/arifpro7284)
@@ -8,48 +8,55 @@ Personal portfolio website for Ariful Islam, a Frontend & WordPress Web Develope
 
 ## About
 
-The site presents Ariful's web development background, skills, services, project concepts, and contact options in a responsive dark interface with blue accents.
+The site presents Ariful's skills, services, project demos, and contact options in a responsive dark interface with blue accents.
 
 ## Features
 
-- Responsive layout for desktop, tablet, and mobile
-- Sticky navigation with active section highlighting and a mobile menu
-- Hero section with availability status, project stats, and a clearly disabled CV control until a real PDF is provided
-- About, learning, skills, services, projects, and contact sections
-- Project cards with technology labels, verified repository links where available, and disabled demo states until real URLs exist
-- Scroll reveal effects with reduced-motion support
-- Contact form validation and email-app handoff
-
-## Technologies
-
-- HTML5 and CSS3
-- Bootstrap 5 and Bootstrap Icons
-- JavaScript and React
-- Google Fonts and Unsplash images
-- Git and GitHub
-- WordPress, WooCommerce, PHP, and MySQL (listed as development skills)
+- Responsive layout, sticky navigation, active section state, and mobile menu
+- Hero section with availability status, project overview, and CV download
+- About, skills, services, project demos, contact, and footer sections
+- Four standalone static demos under `projects/`
+- Reduced-motion support and lightweight interaction scripts
+- Contact form validation with email-app handoff; it does not send to a server
 
 ## Project Files
 
-- `index.html` - Page content and section structure
+- `index.html` - Portfolio page and sections
 - `style.css` - Theme, components, and responsive layouts
-- `script.js` - Mobile navigation, CV download, scroll effects, and contact form behavior
-- `Arifulislam(Development_certipicat).jpg` - Supplied certificate presentation photo displayed in an inline SVG that preserves its full aspect ratio
-- `website-build-prompts.txt` - Copy-ready prompts for building each portfolio demo project
+- `script.js` - Navigation, contact validation, and interactions
+- `Ariful-Islam-CV.pdf` - Downloadable CV in the project root
+- `Arifulislam(Development_certipicat).jpg` - Source photo shown in the hero's inline SVG
+- `website-build-prompts.txt` - Copy-ready prompts for the demo projects
+- `projects/README.md` - Demo descriptions, limitations, and public URLs
+
+## Project Demos
+
+- Business Website: [Live demo](https://arifpro7284.github.io/portfolio/projects/business-website/) · [Source](https://github.com/arifpro7284/portfolio/tree/main/projects/business-website)
+- Restaurant Website: [Live demo](https://arifpro7284.github.io/portfolio/projects/restaurant-website/) · [Source](https://github.com/arifpro7284/portfolio/tree/main/projects/restaurant-website)
+- E-commerce Website: [Live demo](https://arifpro7284.github.io/portfolio/projects/ecommerce-website/) · [Source](https://github.com/arifpro7284/portfolio/tree/main/projects/ecommerce-website)
+- News & Blog Website: [Live demo](https://arifpro7284.github.io/portfolio/projects/news-blog-website/) · [Source](https://github.com/arifpro7284/portfolio/tree/main/projects/news-blog-website)
+- Personal Portfolio: [Live demo](https://arifpro7284.github.io/portfolio/) · [Source](https://github.com/arifpro7284/portfolio)
+
+All four project folders contain sample concepts, not client work. The e-commerce cart is browser-only and does not take payments or create orders.
+
+## Technologies
+
+- HTML5, CSS3, JavaScript, Bootstrap 5, and Bootstrap Icons
+- React, PHP, MySQL, WordPress, WooCommerce, Git, and GitHub are listed portfolio skills
+- Google Fonts and Unsplash images are loaded from external services
 
 ## Run Locally
 
-Open `index.html` in a browser. This project is currently in `D:\xampp\htdocs\portfolio_wb`; with XAMPP Apache running, visit:
+Open `index.html` in a browser. With XAMPP Apache running, visit:
 
 ```text
 http://localhost/portfolio_wb/
 ```
 
-Fonts, icons, and project images are loaded from external services, so an internet connection is needed for those assets.
+Each demo can also be opened from its folder, for example `projects/restaurant-website/index.html`.
 
 ## Before Customizing
 
-- Replace `YOUR_EMAIL_ADDRESS` in the contact form's `data-recipient` attribute in `index.html` with your real email address. The form opens a prefilled message in the visitor's email app; it does not send directly to a server.
-- `Ariful-Islam-CV.pdf` is included in the project root beside `index.html`; both CV buttons download this file.
-- Project demos stay disabled until you have a real live URL. The business project repository is also unlinked until its matching repository is identified.
-- Add LinkedIn, Fiverr, and Facebook profile URLs only when you want those social links enabled.
+- Replace `YOUR_EMAIL_ADDRESS` in the contact form's `data-recipient` with your real email. The form opens a prefilled message in the visitor's email app; it does not send directly to a server.
+- Add LinkedIn, Fiverr, and Facebook URLs only when you have real profile links.
+- Demo text and products are examples. Replace them with accurate information before presenting a demo as a real business site.

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An editorial news and blog website demo with sample stories and working filters.">
+  <title>News &amp; Blog Website Demo | Ariful Islam</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-banner">EDITORIAL WEBSITE DEMO <span>Sample stories only · No real publisher</span></div>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="brand-mark">N</span><span>Fieldnotes <small>JOURNAL DEMO</small></span></a>
+    <div class="nav-right"><a href="#stories">Stories</a><a href="#about">About</a><a class="nav-anchor" href="#stories">Explore the journal <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+  <main id="main">
+    <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow"><span>ISSUE 001</span> / A SAMPLE EDITORIAL</p><h1>Stories for<br>the <em>curious.</em></h1><p>A quiet place for ideas about making, the web, and the details in between. All copy here is original sample content for this demo.</p><a class="text-link" href="#stories">Browse sample stories <span aria-hidden="true">↓</span></a></div><figure class="hero-image"><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85" alt="Open newspaper laid on a table" width="1400" height="933" fetchpriority="high"><figcaption>DEMO EDITION / 01</figcaption></figure></section>
+    <section class="stories" id="stories" aria-labelledby="stories-title"><div class="section-heading"><div><p class="eyebrow">THE JOURNAL</p><h2 id="stories-title">Notes worth keeping.</h2></div><p>Sample stories for layout demonstration.</p></div>
+      <div class="story-controls"><div class="category-filters" role="group" aria-label="Filter sample stories"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter-button" type="button" data-filter="design" aria-pressed="false">Design</button><button class="filter-button" type="button" data-filter="web" aria-pressed="false">The web</button><button class="filter-button" type="button" data-filter="notes" aria-pressed="false">Notes</button></div><label class="search-label">Search stories<input type="search" id="story-search" placeholder="Search sample stories" autocomplete="off"></label></div>
+      <div class="story-grid">
+        <article class="story-card" data-category="design"><div class="story-image"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="Quiet modern workspace with natural light" width="900" height="650" loading="lazy"><span>DESIGN / SAMPLE</span></div><div class="story-copy"><p class="story-kicker">DESIGN / SAMPLE STORY</p><h3>A little more room</h3><p>How small choices in a workspace can make a day feel more considered.</p><button class="read-button" type="button" data-article="article-one">Read demo story <span aria-hidden="true">↗</span></button></div></article>
+        <article class="story-card" data-category="web"><div class="story-image"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Laptop showing a code editor on a desk" width="900" height="650" loading="lazy"><span>THE WEB / SAMPLE</span></div><div class="story-copy"><p class="story-kicker">THE WEB / SAMPLE STORY</p><h3>The useful web</h3><p>A simple reminder to build pages around the person using them.</p><button class="read-button" type="button" data-article="article-two">Read demo story <span aria-hidden="true">↗</span></button></div></article>
+        <article class="story-card" data-category="notes"><div class="story-image"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80" alt="Notebook and pen on a writing desk" width="900" height="650" loading="lazy"><span>NOTES / SAMPLE</span></div><div class="story-copy"><p class="story-kicker">NOTES / SAMPLE STORY</p><h3>Keep a note</h3><p>A small practice for catching the beginnings of an idea.</p><button class="read-button" type="button" data-article="article-three">Read demo story <span aria-hidden="true">↗</span></button></div></article>
+      </div>
+      <template id="article-one"><p>Good work does not always need more room. Sometimes it needs fewer interruptions, a clear surface, and one thing worth paying attention to.</p><p>This original sample story is included to demonstrate an article reading view. Replace it with your own writing before publishing it as real editorial content.</p></template>
+      <template id="article-two"><p>A useful page respects the reader's time. It says what it is, makes the next step clear, and does not hide the details that matter.</p><p>This original sample story demonstrates the article view only. It is not reporting about a real company or event.</p></template>
+      <template id="article-three"><p>An idea can begin as a sentence, a question, or a detail noticed on the way somewhere else. Keeping a note makes it easier to return to that beginning.</p><p>This original sample story demonstrates the article view only. Replace it with your own writing before publishing.</p></template>
+    </section>
+    <section class="about" id="about"><div class="about-copy"><p class="eyebrow">ABOUT THIS DEMO</p><h2>A home for<br><em>good questions.</em></h2><p>This is a sample editorial layout. Add the publication's real purpose, editor details, and contact information before launch.</p></div><div class="about-image"><img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1100&q=85" alt="Books arranged on a library shelf" width="1100" height="733" loading="lazy"></div></section>
+  </main>
+  <dialog class="article-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><p class="eyebrow">SAMPLE STORY · DEMO CONTENT</p><button class="dialog-close" type="button" aria-label="Close article">Close</button></div><h2 id="dialog-title"></h2><div class="dialog-body"></div></dialog>
+  <footer><a class="brand" href="#home"><span class="brand-mark">N</span><span>Fieldnotes <small>JOURNAL DEMO</small></span></a><p>Sample editorial concept · No real publisher</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>

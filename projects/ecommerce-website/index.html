@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A static e-commerce website demo with sample products and an interactive cart.">
+  <title>E-commerce Website Demo | Ariful Islam</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-banner">STATIC STORE DEMO <span>Sample products only · No orders or payments</span></div>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="brand-mark">S</span><span>Sample Shop</span></a>
+    <div class="header-actions"><a class="nav-link" href="#products">Shop objects</a><button class="cart-toggle" type="button" aria-expanded="false" aria-controls="cart-panel"><span aria-hidden="true">Bag</span><span class="cart-count" aria-live="polite">0</span></button></div>
+  </nav></header>
+  <main id="main">
+    <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow">A STATIC E-COMMERCE CONCEPT</p><h1>Everyday objects,<br><em>thoughtfully chosen.</em></h1><p>A sample storefront for browsing demo items. Product details and prices are intentionally not presented as real.</p><a class="button button-dark" href="#products">Browse sample items <span aria-hidden="true">↓</span></a></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1300&q=85" alt="Carefully arranged home objects on a shelf" width="1300" height="867" fetchpriority="high"><span>SHOP DEMO / 01</span></div></section>
+    <section class="products-section" id="products" aria-labelledby="products-title"><div class="section-heading"><div><p class="eyebrow">SAMPLE COLLECTION</p><h2 id="products-title">Browse the objects.</h2></div><p>All items are examples for this demo store.</p></div>
+      <div class="shop-controls"><div class="filters" role="group" aria-label="Filter demo products"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All items</button><button type="button" class="filter-button" data-filter="home" aria-pressed="false">Home</button><button type="button" class="filter-button" data-filter="carry" aria-pressed="false">Carry</button></div><label class="search-label">Search demo items<input id="product-search" type="search" placeholder="Search" autocomplete="off"></label></div>
+      <div class="product-grid">
+        <article class="product-card" data-category="home"><div class="product-image"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80" alt="Simple table lamp in a quiet room" width="800" height="1000" loading="lazy"><span>SAMPLE ITEM</span></div><div class="product-info"><div><h3>Quiet light</h3><p>Example home object · Not for sale</p></div><button class="add-button" type="button" aria-label="Add Quiet light to demo cart">Add to demo cart <span aria-hidden="true">+</span></button></div></article>
+        <article class="product-card" data-category="home"><div class="product-image"><img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=80" alt="Ceramic cup on a table" width="800" height="1000" loading="lazy"><span>SAMPLE ITEM</span></div><div class="product-info"><div><h3>Everyday cup</h3><p>Example home object · Not for sale</p></div><button class="add-button" type="button" aria-label="Add Everyday cup to demo cart">Add to demo cart <span aria-hidden="true">+</span></button></div></article>
+        <article class="product-card" data-category="carry"><div class="product-image"><img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80" alt="Simple fabric bag displayed against a wall" width="800" height="1000" loading="lazy"><span>SAMPLE ITEM</span></div><div class="product-info"><div><h3>Market carryall</h3><p>Example carry item · Not for sale</p></div><button class="add-button" type="button" aria-label="Add Market carryall to demo cart">Add to demo cart <span aria-hidden="true">+</span></button></div></article>
+        <article class="product-card" data-category="home"><div class="product-image"><img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=800&q=80" alt="Decorative home objects arranged on a shelf" width="800" height="1000" loading="lazy"><span>SAMPLE ITEM</span></div><div class="product-info"><div><h3>Small forms</h3><p>Example home object · Not for sale</p></div><button class="add-button" type="button" aria-label="Add Small forms to demo cart">Add to demo cart <span aria-hidden="true">+</span></button></div></article>
+      </div>
+      <p class="demo-disclaimer" role="note">Demo only. The cart stores no payment details and cannot place an order.</p>
+    </section>
+    <aside class="cart-panel" id="cart-panel" aria-labelledby="cart-title" hidden><div class="cart-header"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cart-title">Demo cart</h2></div><button class="cart-close" type="button" aria-label="Close cart">Close</button></div><p class="cart-empty">Your demo cart is empty.</p><ul class="cart-items" aria-live="polite"></ul><button class="checkout-button" type="button">Demo checkout</button><p class="checkout-status" role="status" aria-live="polite">No order or payment will be created.</p></aside>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">S</span><span>Sample Shop</span></a><p>E-commerce website demo concept · No real products or payments</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>

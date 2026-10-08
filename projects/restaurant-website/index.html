@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A restaurant website demo concept with a sample menu and responsive layout.">
+  <title>Restaurant Website Demo | Ariful Islam</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-banner">RESTAURANT WEBSITE DEMO <span>Sample menu only · Replace details before launch</span></div>
+  <header class="site-header"><nav class="nav-wrap" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="brand-mark">R</span><span>Restaurant Name</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <div class="main-nav" id="main-nav"><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#visit">Visit</a><a class="nav-cta" href="#menu">View sample menu <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow">A RESTAURANT WEBSITE CONCEPT</p><h1>Gather around<br><em>something good.</em></h1><p>A warm, welcoming place to share a meal. Replace this sample introduction with the restaurant's real story.</p><div class="hero-actions"><a class="button button-dark" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a><span class="button button-disabled" aria-disabled="true">Reservations coming soon</span></div></div>
+      <figure class="hero-image"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Warmly lit restaurant dining room" width="1400" height="933" fetchpriority="high"><figcaption>RESTAURANT CONCEPT / 01</figcaption></figure>
+    </section>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title"><div class="section-heading"><p class="eyebrow">THE SAMPLE MENU</p><h2 id="menu-title">A little of everything.</h2><p>Demo dishes only. No real prices or availability are provided.</p></div>
+      <div class="filters" role="group" aria-label="Filter sample menu"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-button" data-filter="plates" aria-pressed="false">Plates</button><button type="button" class="filter-button" data-filter="sides" aria-pressed="false">Sides</button><button type="button" class="filter-button" data-filter="drinks" aria-pressed="false">Drinks</button></div>
+      <div class="menu-grid"><article class="menu-item" data-category="plates"><span class="menu-index">PLATE / 01</span><h3>Seasonal garden plate</h3><p>Sample menu description goes here.</p><span class="sample-label">DEMO DISH · PRICE NOT SET</span></article><article class="menu-item" data-category="plates"><span class="menu-index">PLATE / 02</span><h3>Slow-roasted vegetables</h3><p>Sample menu description goes here.</p><span class="sample-label">DEMO DISH · PRICE NOT SET</span></article><article class="menu-item" data-category="sides"><span class="menu-index">SIDE / 01</span><h3>House-baked bread</h3><p>Sample menu description goes here.</p><span class="sample-label">DEMO DISH · PRICE NOT SET</span></article><article class="menu-item" data-category="sides"><span class="menu-index">SIDE / 02</span><h3>Fresh market salad</h3><p>Sample menu description goes here.</p><span class="sample-label">DEMO DISH · PRICE NOT SET</span></article><article class="menu-item" data-category="drinks"><span class="menu-index">DRINK / 01</span><h3>Citrus cooler</h3><p>Sample menu description goes here.</p><span class="sample-label">DEMO DRINK · PRICE NOT SET</span></article><article class="menu-item" data-category="drinks"><span class="menu-index">DRINK / 02</span><h3>House tea</h3><p>Sample menu description goes here.</p><span class="sample-label">DEMO DRINK · PRICE NOT SET</span></article></div>
+    </section>
+    <section class="story" id="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Chef preparing a dish in a restaurant kitchen" width="1000" height="667" loading="lazy"></div><div class="story-copy"><p class="eyebrow">OUR STORY</p><h2>Made for the<br><em>moments between.</em></h2><p>Add the real restaurant story, menu approach, and team details here. This demo makes no claims about an actual venue.</p></div></section>
+    <section class="visit" id="visit"><div><p class="eyebrow">PLAN A VISIT</p><h2>Come by sometime.</h2><p>Address and opening hours have not been provided.</p></div><div class="visit-details"><span class="detail-label">LOCATION</span><strong>Details coming soon</strong><span class="detail-label">OPENING HOURS</span><strong>Details coming soon</strong><button class="button button-disabled" type="button" disabled>Reservations coming soon</button></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">R</span><span>Restaurant Name</span></a><p>Restaurant website demo concept · Sample menu</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
