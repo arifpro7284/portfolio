@@ -47,7 +47,7 @@ Fonts, icons, and project images are loaded from external services, so an intern
 
 ## Before Customizing
 
-- Add your email address to the contact form's `data-recipient` attribute in `index.html`. The form opens a prefilled message in the visitor's email app; it does not send directly to a server.
-- No CV PDF is included yet. Put your real file in the project root, beside `index.html`, as `Ariful-Islam-CV.pdf`, then change both disabled CV controls in `index.html` into download links.
+- Replace `YOUR_EMAIL_ADDRESS` in the contact form's `data-recipient` attribute in `index.html` with your real email address. The form opens a prefilled message in the visitor's email app; it does not send directly to a server.
+- No CV PDF is included yet. Put your real file in the project root, beside `index.html`, as `Ariful-Islam-CV.pdf`. Both controls already point to that file; remove `aria-disabled="true"` from both CV links in `index.html` to enable downloads.
 - Project demos stay disabled until you have a real live URL. The business project repository is also unlinked until its matching repository is identified.
 - Add LinkedIn, Fiverr, and Facebook profile URLs only when you want those social links enabled.

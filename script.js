@@ -22,6 +22,12 @@ primaryNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", closeNavigation);
 });
 
+document.querySelectorAll("[data-cv-download]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (link.getAttribute("aria-disabled") === "true") event.preventDefault();
+  });
+});
+
 document.addEventListener("click", (event) => {
   if (!primaryNav.contains(event.target) && !navToggle.contains(event.target)) closeNavigation();
 });
@@ -125,8 +131,8 @@ contactForm.addEventListener("submit", (event) => {
   }
 
   const recipient = contactForm.dataset.recipient.trim();
-  if (!recipient) {
-    formStatus.textContent = "Your message is ready. Add your email address to the form's data-recipient in index.html to enable sending.";
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient)) {
+    formStatus.textContent = "Your message is ready. Replace YOUR_EMAIL_ADDRESS in the form's data-recipient in index.html with your real email to enable sending.";
     formStatus.classList.add("is-error");
     return;
   }

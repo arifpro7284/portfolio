@@ -38,14 +38,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 10px; padding: 0 20px; border: 1px solid transparent; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 700; transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease; }
 .button:hover { transform: translateY(-2px); }
 .button:disabled { transform: none; cursor: not-allowed; opacity: .55; }
+.button[aria-disabled="true"] { transform: none; cursor: not-allowed; opacity: .55; }
 .button-primary { background: var(--blue); color: #101216; }
 .button-primary:hover { background: #a6c1ff; color: #101216; }
 .button-outline { min-height: 40px; padding: 0 13px; border-color: #454a56; color: var(--text); font-size: 12px; }
 .button-outline:hover { border-color: var(--blue); color: var(--blue); }
 .nav-cv { min-height: 42px; padding-inline: 15px; border-color: rgb(132 170 255 / 60%); background: rgb(132 170 255 / 8%); color: #dce6ff; }
 .nav-cv:hover { border-color: var(--blue); background: var(--blue); color: var(--ink); }
+.nav-cv[aria-disabled="true"]:hover { border-color: rgb(132 170 255 / 60%); background: rgb(132 170 255 / 8%); color: #dce6ff; }
 .button-quiet { padding-inline: 8px; background: transparent; color: var(--text); }
 .button-quiet:hover { color: var(--blue); }
+.button-quiet[aria-disabled="true"]:hover { color: var(--text); }
 .button-light { background: var(--text); color: var(--ink); }
 .button-light:hover { background: var(--lime); color: var(--ink); }
 .button:focus-visible, a:focus-visible, .nav-toggle:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--lime); outline-offset: 4px; }
