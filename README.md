@@ -35,6 +35,7 @@ The site presents Ariful's web development background, skills, services, project
 - `style.css` - Theme, components, and responsive layouts
 - `script.js` - Mobile navigation, CV download, scroll effects, and contact form behavior
 - `Arifulislam(Development_certipicat).jpg` - Supplied certificate presentation photo displayed in an inline SVG that preserves its full aspect ratio
+- `website-build-prompts.txt` - Copy-ready prompts for building each portfolio demo project
 
 ## Run Locally
 

@@ -1,0 +1,83 @@
+WEBSITE BUILD PROMPTS FOR ARIFUL ISLAM'S PORTFOLIO
+
+Use one prompt at a time in your AI coding tool. Ask it to create the files in a separate folder or repository for that project. Do not replace your portfolio files with a demo project.
+
+GENERAL RULES FOR EVERY PROJECT
+
+- Build a complete, responsive website that works on mobile, tablet, and desktop.
+- Use semantic HTML, accessible labels, keyboard-friendly controls, and useful image alt text.
+- Keep the code organized and explain how to run the project locally.
+- Do not invent real clients, testimonials, company details, contact information, project history, or live URLs. Use clearly labeled editable placeholders where information is missing.
+- Use images only when the source and usage are clear. Keep image paths relative when assets are included in the project.
+- Before publishing, test all buttons, forms, links, and layouts.
+- Add a Live Demo link to the main portfolio only after the website is publicly deployed and its URL has been checked.
+
+------------------------------------------------------------
+1. BUSINESS WEBSITE
+Suggested folder: business-website
+
+PROMPT
+
+Build a polished, responsive demo website for a general small business. Create a clear home page with a header and navigation, hero section, overview, services, about section, contact call-to-action, and footer. Use a professional visual style with readable typography, consistent spacing, and responsive layouts.
+
+Do not choose a real company name, address, phone number, client, testimonial, or claim. Use labels such as [Business name], [Service description], and [Contact details] where information is required. Make the navigation and calls to action work. If there is no real contact destination, show a clear placeholder instead of a fake link.
+
+Create index.html, style.css, and script.js. Keep JavaScript lightweight. Include a README with local run instructions and a checklist of placeholders I need to replace.
+
+------------------------------------------------------------
+2. RESTAURANT WEBSITE
+Suggested folder: restaurant-website
+
+PROMPT
+
+Build a responsive restaurant website demo with a welcoming home page, menu categories, sample menu items, opening-hours area, location section, and contact or reservation call-to-action. Make the menu easy to scan on a phone and use accessible navigation and buttons.
+
+Do not invent a real restaurant, address, opening hours, prices, phone number, reviews, or reservation URL. Clearly mark sample menu data and unknown details as editable placeholders. Do not submit a reservation to a non-existent service. Use a working email link only if I provide a real email address.
+
+Create index.html, style.css, and script.js, plus a README. Keep the design quick to load and explain which details and image assets I should replace before publishing.
+
+------------------------------------------------------------
+3. E-COMMERCE WEBSITE
+Suggested folder: ecommerce-website
+
+PROMPT
+
+Build an e-commerce website demo with a responsive product catalog, product cards, category/filter controls, a cart, and a clearly labeled demo checkout. Use sample products only when they are visibly marked as demo content. Make cart interactions work in the browser and support keyboard use.
+
+Do not collect payment details, claim that a purchase is real, invent a business or shipping policy, or connect to a real payment service. If implementing PHP and MySQL, include a database schema and safe local setup instructions; never include real credentials. Do not present the PHP version as deployable on GitHub Pages, because GitHub Pages hosts static files only.
+
+Create the files needed for the chosen approach and explain whether it is a static front-end demo or a PHP/MySQL application. Include a README with local run instructions and all required placeholders.
+
+------------------------------------------------------------
+4. NEWS / BLOG WEBSITE
+Suggested folder: news-blog-website
+
+PROMPT
+
+Build a responsive news and blog website demo with a home page, article cards, categories, a search control, and a readable article page. Use a clear editorial hierarchy and ensure the layout works on small screens.
+
+Use original demo copy or clearly marked placeholder text. Do not copy published articles, invent a real publisher, or claim that the sample posts are real reporting. Make search and category controls work for the included demo data. If implementing PHP and MySQL, include a database schema and local setup instructions, and explain that PHP/MySQL needs a compatible host rather than GitHub Pages.
+
+Create the files needed for the chosen approach and include a README with local run instructions and a list of content I need to replace.
+
+------------------------------------------------------------
+5. PERSONAL PORTFOLIO WEBSITE
+Suggested folder: personal-portfolio-demo
+
+PROMPT
+
+Build a clean, responsive personal portfolio demo with an introduction, skills, services or interests, selected work, and contact section. Use accessible navigation, mobile-friendly spacing, and a simple professional visual style.
+
+Do not invent the portfolio owner's name, skills, years of experience, employers, clients, testimonials, project links, email, or social profiles. Use clearly labeled placeholders for unknown facts. Do not copy another person's portfolio text or claim the demo projects are completed client work.
+
+Create index.html, style.css, and script.js, plus a README with local run instructions and exact steps for replacing placeholders. Make every unavailable destination visibly disabled until a real URL is supplied.
+
+------------------------------------------------------------
+CONNECT A FINISHED PROJECT TO THE MAIN PORTFOLIO
+
+1. Build and test each project in its own folder or repository.
+2. Publish it to a real public URL. GitHub Pages can host static HTML/CSS/JavaScript; PHP/MySQL projects need a PHP-compatible host.
+3. Open the public URL yourself and confirm it loads before using it.
+4. In the matching project card in index.html, replace “Live Demo Coming Soon” with a link to that verified URL.
+5. Point the GitHub button to that project's actual repository. Do not use the profile URL as a substitute for a project repository.
+6. Keep buttons disabled or labeled “Coming Soon” until the real destination exists.
