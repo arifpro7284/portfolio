@@ -75,7 +75,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .cv-note { margin: 8px 0 0; color: #959aa4; font-size: 10px; line-height: 1.5; }
 .cv-note code { color: #c7d7ff; font-size: inherit; }
 .hero-visual { position: relative; min-height: 450px; height: min(44vw, 500px); overflow: hidden; border: 1px solid rgb(255 255 255 / 10%); border-radius: 7px; background: #262b35; box-shadow: 0 22px 60px rgb(0 0 0 / 25%); }
-.hero-visual > img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.75); }
+.hero-visual > img { width: 100%; height: 100%; transform: scale(2.5); transform-origin: 18% 43%; object-fit: cover; object-position: center; filter: saturate(.75); }
 .image-shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 44%, rgb(8 10 14 / 73%) 100%); }
 .hero-image-label { position: absolute; right: 24px; bottom: 25px; left: 24px; display: flex; align-items: center; gap: 12px; }
 .label-icon { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid rgb(255 255 255 / 30%); border-radius: 3px; color: var(--lime); }

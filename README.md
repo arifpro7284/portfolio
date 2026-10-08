@@ -34,6 +34,7 @@ The site presents Ariful's web development background, skills, services, project
 - `index.html` - Page content and section structure
 - `style.css` - Theme, components, and responsive layouts
 - `script.js` - Mobile navigation, CV download, scroll effects, and contact form behavior
+- `Arifulislam(Development_certipicat).jpg` - Supplied certificate presentation photo used in the hero section
 
 ## Run Locally
 
