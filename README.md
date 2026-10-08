@@ -14,9 +14,9 @@ The site presents Ariful's web development background, skills, services, project
 
 - Responsive layout for desktop, tablet, and mobile
 - Sticky navigation with active section highlighting and a mobile menu
-- Hero section with availability status, project stats, and CV download
+- Hero section with availability status, project stats, and a clearly disabled CV control until a real PDF is provided
 - About, learning, skills, services, projects, and contact sections
-- Project cards with technology labels and GitHub links
+- Project cards with technology labels, verified repository links where available, and disabled demo states until real URLs exist
 - Scroll reveal effects with reduced-motion support
 - Contact form validation and email-app handoff
 
@@ -24,7 +24,7 @@ The site presents Ariful's web development background, skills, services, project
 
 - HTML5 and CSS3
 - Bootstrap 5 and Bootstrap Icons
-- JavaScript
+- JavaScript and React
 - Google Fonts and Unsplash images
 - Git and GitHub
 - WordPress, WooCommerce, PHP, and MySQL (listed as development skills)
@@ -37,10 +37,10 @@ The site presents Ariful's web development background, skills, services, project
 
 ## Run Locally
 
-Open `index.html` in a browser. To preview through XAMPP, place the project folder under `htdocs`, start Apache, and visit:
+Open `index.html` in a browser. This project is currently in `D:\xampp\htdocs\portfolio_wb`; with XAMPP Apache running, visit:
 
 ```text
-http://localhost/portfolio/
+http://localhost/portfolio_wb/
 ```
 
 Fonts, icons, and project images are loaded from external services, so an internet connection is needed for those assets.
@@ -48,5 +48,6 @@ Fonts, icons, and project images are loaded from external services, so an intern
 ## Before Customizing
 
 - Add your email address to the contact form's `data-recipient` attribute in `index.html`. The form opens a prefilled message in the visitor's email app; it does not send directly to a server.
-- Replace each project card's Live Demo placeholder with that project's real URL.
-- Update the generated CV content in `script.js` with your final resume details when ready.
+- No CV PDF is included yet. Put your real file beside `index.html` as `Ariful-Islam-CV.pdf`, then change both disabled CV controls in `index.html` into download links.
+- Project demos stay disabled until you have a real live URL. The business project repository is also unlinked until its matching repository is identified.
+- Add LinkedIn, Fiverr, and Facebook profile URLs only when you want those social links enabled.

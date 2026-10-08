@@ -4,8 +4,6 @@ document.documentElement.classList.add("js");
 
 const navToggle = document.querySelector(".nav-toggle");
 const primaryNav = document.querySelector(".primary-nav");
-const notice = document.querySelector(".site-notice");
-let noticeTimer;
 
 function closeNavigation() {
   navToggle.setAttribute("aria-expanded", "false");
@@ -24,8 +22,6 @@ primaryNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", closeNavigation);
 });
 
-primaryNav.querySelector("[data-download-cv]").addEventListener("click", closeNavigation);
-
 document.addEventListener("click", (event) => {
   if (!primaryNav.contains(event.target) && !navToggle.contains(event.target)) closeNavigation();
 });
@@ -35,73 +31,40 @@ const navigationSections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
-if ("IntersectionObserver" in window) {
-  const activeSectionObserver = new IntersectionObserver((entries) => {
-    const activeEntry = entries.find((entry) => entry.isIntersecting);
-    if (!activeEntry) return;
+function setActiveSection(activeSection) {
+  sectionLinks.forEach((link) => {
+    const isActive = link.hash === `#${activeSection.id}`;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+}
 
-    sectionLinks.forEach((link) => {
-      const isActive = link.hash === `#${activeEntry.target.id}`;
-      link.classList.toggle("is-active", isActive);
-      if (isActive) link.setAttribute("aria-current", "location");
-      else link.removeAttribute("aria-current");
-    });
-  }, { rootMargin: "-35% 0px -55% 0px", threshold: 0 });
+let activeSectionObserver;
+
+function observeActiveSections() {
+  if (!("IntersectionObserver" in window)) return;
+  activeSectionObserver?.disconnect();
+
+  const topInset = Math.round(window.innerHeight * 0.35);
+  const bottomInset = Math.round(window.innerHeight * 0.55);
+  activeSectionObserver = new IntersectionObserver((entries) => {
+    const activeEntry = entries.find((entry) => entry.isIntersecting);
+    if (activeEntry) setActiveSection(activeEntry.target);
+  }, { rootMargin: `-${topInset}px 0px -${bottomInset}px 0px`, threshold: 0 });
 
   navigationSections.forEach((section) => activeSectionObserver.observe(section));
 }
 
+if ("IntersectionObserver" in window) {
+  observeActiveSections();
+  window.addEventListener("resize", observeActiveSections);
+} else {
+  setActiveSection(navigationSections[0]);
+}
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeNavigation();
-});
-
-function showNotice(message) {
-  notice.textContent = message;
-  notice.classList.add("is-visible");
-  window.clearTimeout(noticeTimer);
-  noticeTimer = window.setTimeout(() => notice.classList.remove("is-visible"), 4200);
-}
-
-function downloadCv() {
-  const cvText = [
-    "ARIFUL ISLAM",
-    "Frontend & WordPress Web Developer",
-    "",
-    "PROFILE",
-    "Beginner and freelance web developer focused on creating modern, responsive and user-friendly websites.",
-    "",
-    "SKILLS",
-    "HTML5, CSS3, Bootstrap, JavaScript, PHP, MySQL, WordPress, WooCommerce, Git & GitHub",
-    "",
-    "SERVICES",
-    "Web design, responsive website development, WordPress development, WooCommerce development, PHP & MySQL development",
-    "",
-    "PORTFOLIO",
-    "Business website, restaurant website, e-commerce website, news/blog website, personal portfolio",
-    "",
-    "Contact and profile links can be added to the portfolio website before publishing."
-  ].join("\n");
-  const file = new Blob([cvText], { type: "text/plain;charset=utf-8" });
-  const fileUrl = URL.createObjectURL(file);
-  const downloadLink = document.createElement("a");
-  downloadLink.href = fileUrl;
-  downloadLink.download = "ariful-islam-cv.txt";
-  document.body.append(downloadLink);
-  downloadLink.click();
-  downloadLink.remove();
-  URL.revokeObjectURL(fileUrl);
-}
-
-document.querySelectorAll("[data-download-cv]").forEach((button) => {
-  button.addEventListener("click", downloadCv);
-});
-
-document.querySelectorAll("[data-placeholder-link]").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    if (link.getAttribute("href") !== "#contact" && link.getAttribute("href") !== "#projects") return;
-    event.preventDefault();
-    showNotice(`Add your ${link.dataset.placeholderLink} URL in index.html before publishing.`);
-  });
 });
 
 const revealItems = document.querySelectorAll(".reveal");
@@ -134,6 +97,8 @@ fields.forEach(({ input, error }) => {
   input.addEventListener("input", () => {
     input.removeAttribute("aria-invalid");
     error.textContent = "";
+    formStatus.textContent = "";
+    formStatus.classList.remove("is-error");
   });
 });
 
@@ -155,6 +120,7 @@ contactForm.addEventListener("submit", (event) => {
   if (!isValid) {
     formStatus.textContent = "Check the highlighted fields and try again.";
     formStatus.classList.add("is-error");
+    fields.find(({ input }) => input.getAttribute("aria-invalid") === "true").input.focus();
     return;
   }
 
