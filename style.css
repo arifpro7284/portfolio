@@ -74,14 +74,8 @@ h1, h2, h3 { font-family: var(--font-display); }
 .hero-stat span { color: var(--muted); font-size: 10px; line-height: 1.4; }
 .cv-note { margin: 8px 0 0; color: #959aa4; font-size: 10px; line-height: 1.5; }
 .cv-note code { color: #c7d7ff; font-size: inherit; }
-.hero-visual { position: relative; min-height: 450px; height: min(44vw, 500px); overflow: hidden; border: 1px solid rgb(255 255 255 / 10%); border-radius: 7px; background: #262b35; box-shadow: 0 22px 60px rgb(0 0 0 / 25%); }
-.hero-visual > img { width: 100%; height: 100%; transform: scale(2.5); transform-origin: 18% 43%; object-fit: cover; object-position: center; filter: saturate(.75); }
-.image-shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 44%, rgb(8 10 14 / 73%) 100%); }
-.hero-image-label { position: absolute; right: 24px; bottom: 25px; left: 24px; display: flex; align-items: center; gap: 12px; }
-.label-icon { display: grid; width: 39px; height: 39px; place-items: center; border: 1px solid rgb(255 255 255 / 30%); border-radius: 3px; color: var(--lime); }
-.hero-image-label strong, .hero-image-label small { display: block; }
-.hero-image-label strong { font: 600 14px var(--font-display); }
-.hero-image-label small { margin-top: 2px; color: #c0c2c8; font-size: 11px; }
+.hero-visual { position: relative; min-height: 0; height: auto; aspect-ratio: 1; overflow: hidden; border: 1px solid rgb(255 255 255 / 10%); border-radius: 7px; background: #262b35; box-shadow: 0 22px 60px rgb(0 0 0 / 25%); }
+.hero-image-svg { display: block; width: 100%; height: 100%; }
 .scroll-cue { position: absolute; bottom: 0; left: 0; display: flex; align-items: center; gap: 10px; color: #90949e; font: 600 9px var(--font-display); letter-spacing: 1.1px; }
 .scroll-cue i { color: var(--blue); font-size: 14px; }
 
@@ -211,7 +205,6 @@ h1, h2, h3 { font-family: var(--font-display); }
   .primary-nav > a { font-size: 12px; }
   .nav-cv { padding-inline: 9px; }
   .hero-grid { gap: 6%; }
-  .hero-visual { min-height: 390px; }
   .skill-groups { gap: 24px; }
   .skill-item { gap: 9px; padding: 10px; font-size: 11px; }
   .skill-icon { width: 32px; height: 32px; }
@@ -238,7 +231,6 @@ h1, h2, h3 { font-family: var(--font-display); }
   .hero-stat { min-height: 67px; padding: 9px; }
   .hero-stat strong { font-size: 17px; }
   .hero-stat:last-child strong { font-size: 13px; }
-  .hero-visual { min-height: 310px; height: 62vw; max-height: 420px; }
   .scroll-cue { position: static; margin-top: -13px; }
   .section-pad { padding: 76px 0; }
   .about-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; gap: 33px; }
